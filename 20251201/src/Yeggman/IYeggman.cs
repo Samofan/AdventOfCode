@@ -1,4 +1,6 @@
-namespace SecretEntrance;
+using SecretEntrance.Models;
+
+namespace SecretEntrance.Yeggman;
 
 public interface IYeggman
 {

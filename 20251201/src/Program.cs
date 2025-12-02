@@ -1,4 +1,5 @@
 ﻿using SecretEntrance;
+using SecretEntrance.Models;
 
 var puzzleInput = 
 """
@@ -15,7 +16,7 @@ L82
 """;
 
 var rotations = Rotation.FromMultilineInput(puzzleInput);
-var yeggman = new Yeggman(YeggmanStrategy.AnyClick);
+var yeggman = new Yeggman(new AnyClickStrategy());
 
 var password = yeggman.GetPassword(50, rotations);
 

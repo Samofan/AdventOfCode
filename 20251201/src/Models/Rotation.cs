@@ -1,6 +1,6 @@
-namespace SecretEntrance;
+namespace SecretEntrance.Models;
 
-public class Rotation(char direction, int clicks)
+public sealed class Rotation(char direction, int clicks)
 {
     public char Direction { get; } = direction;
     public int Clicks { get; } = clicks;

@@ -1,4 +1,5 @@
-﻿using Shouldly;
+﻿using SecretEntrance.Yeggman.Strategy;
+using Shouldly;
 
 namespace SecretEntrance.Tests;
 
@@ -24,7 +25,7 @@ public class YeggmanTests
 
         const int startingPoint = 50;
 
-        var sut = new Yeggman(YeggmanStrategy.LeftClick);
+        var sut = new Yeggman(new LeftClickStrategy());
 
         // Act
         var result = sut.GetPassword(startingPoint, rotations);
@@ -53,7 +54,7 @@ public class YeggmanTests
 
         const int startingPoint = 50;
 
-        var sut = new Yeggman(YeggmanStrategy.AnyClick);
+        var sut = new Yeggman(new AnyClickStrategy());
 
         // Act
         var result = sut.GetPassword(startingPoint, rotations);
