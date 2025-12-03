@@ -1,6 +1,6 @@
 using SecretEntrance.Models;
 
-namespace SecretEntrance.Yeggman;
+namespace SecretEntrance;
 
 public interface IYeggman
 {

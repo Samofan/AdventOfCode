@@ -1,3 +1,4 @@
+using SecretEntrance.Models;
 using Shouldly;
 
 namespace SecretEntrance.Tests;

@@ -1,6 +1,6 @@
 using SecretEntrance.Models;
 
-namespace SecretEntrance.Yeggman.Strategy;
+namespace SecretEntrance.Strategy;
 
 public sealed class LeftClickStrategy : IYeggmanStrategy
 {

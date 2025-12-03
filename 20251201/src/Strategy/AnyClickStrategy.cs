@@ -1,12 +1,12 @@
 using SecretEntrance.Models;
 
-namespace SecretEntrance.Yeggman.Strategy;
+namespace SecretEntrance.Strategy;
 
 public sealed class AnyClickStrategy : IYeggmanStrategy
 {
     public int GetPassword(int startingPoint, Rotation[] rotations)
     {
-        const IYeggmanStrategy leftClickStrategy = new LeftClickStrategy();
+        var leftClickStrategy = new LeftClickStrategy();
 
         var expanded = rotations
             .SelectMany(r => Enumerable.Range(0, r.Clicks).Select(_ => new Rotation(r.Direction, 1)))

@@ -1,4 +1,5 @@
-﻿using SecretEntrance.Yeggman.Strategy;
+﻿using SecretEntrance.Models;
+using SecretEntrance.Strategy;
 using Shouldly;
 
 namespace SecretEntrance.Tests;

@@ -1,5 +1,6 @@
 ﻿using SecretEntrance;
 using SecretEntrance.Models;
+using SecretEntrance.Strategy;
 
 var puzzleInput = 
 """

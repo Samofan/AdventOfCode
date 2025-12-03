@@ -1,7 +1,7 @@
 using SecretEntrance.Models;
-using SecretEntrance.Yeggman.Strategy;
+using SecretEntrance.Strategy;
 
-namespace SecretEntrance.Yeggman;
+namespace SecretEntrance;
 
 public sealed class Yeggman(IYeggmanStrategy strategy) : IYeggman
 {
