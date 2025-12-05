@@ -1,7 +1,7 @@
-using SecretEntrance.Models;
-using SecretEntrance.Strategy;
+using AdventOfCode.SecretEntrance.Models;
+using AdventOfCode.SecretEntrance.Yeggmen.Strategies;
 
-namespace SecretEntrance;
+namespace AdventOfCode.SecretEntrance.Yeggmen;
 
 public sealed class Yeggman(IYeggmanStrategy strategy) : IYeggman
 {

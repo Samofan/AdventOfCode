@@ -1,6 +1,6 @@
-using SecretEntrance.Models;
+using AdventOfCode.SecretEntrance.Models;
 
-namespace SecretEntrance.Strategy;
+namespace AdventOfCode.SecretEntrance.Yeggmen.Strategies;
 
 public interface IYeggmanStrategy
 {

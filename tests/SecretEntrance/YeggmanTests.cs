@@ -1,8 +1,10 @@
-﻿using SecretEntrance.Models;
-using SecretEntrance.Strategy;
+﻿using AdventOfCode.SecretEntrance.Models;
+using AdventOfCode.SecretEntrance.Yeggmen;
+using AdventOfCode.SecretEntrance.Yeggmen.Strategies;
+
 using Shouldly;
 
-namespace SecretEntrance.Tests;
+namespace AdventOfCode.Tests.SecretEntrance;
 
 public class YeggmanTests
 {

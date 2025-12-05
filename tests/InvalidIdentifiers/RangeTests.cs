@@ -1,8 +1,8 @@
-﻿using Shouldly;
+﻿using Range = AdventOfCode.InvalidIdentifiers.Range;
 
-using Range = InvalidIdentifier.Models.Range;
+using Shouldly;
 
-namespace InvalidIdentifier.Tests;
+namespace AdventOfCode.Tests.InvalidIdentifiers;
 
 public class RangeTests
 {

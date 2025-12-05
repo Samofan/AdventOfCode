@@ -1,6 +1,7 @@
-using SecretEntrance.Models;
+using AdventOfCode.SecretEntrance.Models;
+using AdventOfCode.SecretEntrance.Yeggmen;
 
-namespace SecretEntrance.Strategy;
+namespace AdventOfCode.SecretEntrance.Yeggmen.Strategies;
 
 public sealed class LeftClickStrategy : IYeggmanStrategy
 {

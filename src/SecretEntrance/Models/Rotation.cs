@@ -1,4 +1,4 @@
-namespace SecretEntrance.Models;
+namespace AdventOfCode.SecretEntrance.Models;
 
 public sealed class Rotation(char direction, int clicks)
 {
