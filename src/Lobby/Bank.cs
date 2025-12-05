@@ -1,29 +1,31 @@
+using System.Linq;
+
 namespace AdventOfCode.Lobby;
 
-public class Bank(string batteryArrangement, int maxBatteries = 2)
+public class Bank(string batteryArrangement)
 {
     private readonly string _batteryArrangement = batteryArrangement.Trim();
 
-    public long GetJoltage()
+    public long GetJoltage(string joltage = "", int startIndex = 0, int maxBatteries = 2)
     {
-        HashSet<long> possibleNumbers = [];
-
-        for (int i = 0; i < _batteryArrangement.Length; i++)
+        if (maxBatteries <= 0 || startIndex >= _batteryArrangement.Length)
         {
-            for (int j = i + 1; j < _batteryArrangement.Length; j++)
+            return long.Parse(joltage);
+        }
+
+        long highestNumber = long.Parse(_batteryArrangement[startIndex].ToString());
+        int foundIndex = startIndex;
+        
+        for (int i = startIndex + 1; i <= _batteryArrangement.Length - maxBatteries; i++)
+        {
+            long currentNumber = long.Parse(_batteryArrangement[i].ToString());
+            if (currentNumber > highestNumber)
             {
-                string number = _batteryArrangement[i].ToString();
-
-                for (int k = 0; k < maxBatteries - 1; k++)
-                {
-                    if (j + k >= _batteryArrangement.Length) break;
-                    number += _batteryArrangement[j + k].ToString();
-                }
-
-                possibleNumbers.Add(long.Parse(number));
+                highestNumber = currentNumber;
+                foundIndex = i;
             }
         }
 
-        return possibleNumbers.Max();
+        return GetJoltage(joltage + highestNumber.ToString(), foundIndex + 1, maxBatteries - 1);
     }
 }

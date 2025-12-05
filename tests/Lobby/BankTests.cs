@@ -53,10 +53,10 @@ public class BankTests
     {
         // Arrange
         var batteryArrangement = "234234234234278";
-        var bank = new Bank(batteryArrangement, maxBatteries: 12);
+        var bank = new Bank(batteryArrangement);
 
         // Act
-        var result = bank.GetJoltage();
+        var result = bank.GetJoltage(maxBatteries: 12);
 
         // Assert
         result.ShouldBe(434234234278);
@@ -67,10 +67,10 @@ public class BankTests
     {
         // Arrange
         var batteryArrangement = "818181911112111";
-        var bank = new Bank(batteryArrangement, maxBatteries: 12);
+        var bank = new Bank(batteryArrangement);
 
         // Act
-        var result = bank.GetJoltage();
+        var result = bank.GetJoltage(maxBatteries: 12);
 
         // Assert
         result.ShouldBe(888911112111);
@@ -81,10 +81,10 @@ public class BankTests
     {
         // Arrange
         var batteryArrangement = "811111111111119";
-        var bank = new Bank(batteryArrangement, maxBatteries: 12);
+        var bank = new Bank(batteryArrangement);
 
         // Act
-        var result = bank.GetJoltage();
+        var result = bank.GetJoltage(maxBatteries: 12);
 
         // Assert
         result.ShouldBe(811111111119);
