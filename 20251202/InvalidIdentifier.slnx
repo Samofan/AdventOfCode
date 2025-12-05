@@ -1,8 +1,0 @@
-<Solution>
-  <Folder Name="/src/">
-    <Project Path="src/InvalidIdentifier.csproj" />
-  </Folder>
-  <Folder Name="/tests/">
-    <Project Path="tests/InvalidIdentifier.Tests.csproj" />
-  </Folder>
-</Solution>

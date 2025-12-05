@@ -1,7 +1,8 @@
-using SecretEntrance.Models;
+using AdventOfCode.SecretEntrance.Models;
+
 using Shouldly;
 
-namespace SecretEntrance.Tests;
+namespace AdventOfCode.Tests.SecretEntrance;
 
 public class RotationTests
 {

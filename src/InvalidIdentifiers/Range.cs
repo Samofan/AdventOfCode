@@ -1,4 +1,4 @@
-namespace InvalidIdentifier.Models;
+namespace AdventOfCode.InvalidIdentifiers;
 
 public sealed record class Range(long Min, long Max)
 {
